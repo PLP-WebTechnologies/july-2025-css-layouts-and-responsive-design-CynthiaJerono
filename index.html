@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout with Flexbox & Grid</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header with navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">LayoutMaster</div>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Modern Web Layouts</h1>
+            <p>Mastering CSS Flexbox and Grid for responsive designs</p>
+        </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <main class="container">
+        <div class="main-content">
+            <!-- Articles Section -->
+            <section class="content">
+                <h2>Featured Articles</h2>
+                <div class="articles">
+                    <!-- Article 1 -->
+                    <article class="card article-card">
+                        <div class="article-img" style="background-image: url('https://via.placeholder.com/400x200');"></div>
+                        <div class="article-content">
+                            <h3>Understanding CSS Grid</h3>
+                            <p>Learn how to create complex two-dimensional layouts with CSS Grid, the most powerful layout system available in CSS.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </article>
+                    
+                    <!-- Article 2 -->
+                    <article class="card article-card">
+                        <div class="article-img" style="background-image: url('https://via.placeholder.com/400x200');"></div>
+                        <div class="article-content">
+                            <h3>Flexbox for Responsive Design</h3>
+                            <p>Discover how Flexbox provides efficient way to lay out, align and distribute space among items in a container.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </article>
+                    
+                    <!-- Article 3 -->
+                    <article class="card article-card">
+                        <div class="article-img" style="background-image: url('https://via.placeholder.com/400x200');"></div>
+                        <div class="article-content">
+                            <h3>Media Query Breakpoints</h3>
+                            <p>Understand how to set appropriate breakpoints for different devices to create truly responsive designs.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <!-- About Widget -->
+                <div class="card sidebar-widget">
+                    <h3>About Us</h3>
+                    <p>We're dedicated to teaching modern web layout techniques using CSS Grid and Flexbox to create beautiful, responsive websites.</p>
+                </div>
+                
+                <!-- Testimonials Widget -->
+                <div class="card sidebar-widget">
+                    <h3>Testimonials</h3>
+                    <div class="testimonials">
+                        <div class="testimonial">
+                            <div class="testimonial-avatar"></div>
+                            <div class="testimonial-content">
+                                <p>"This tutorial completely changed how I approach web layouts!"</p>
+                                <cite>- Jane Doe</cite>
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <div class="testimonial-avatar"></div>
+                            <div class="testimonial-content">
+                                <p>"Finally understand how to combine Grid and Flexbox effectively."</p>
+                                <cite>- John Smith</cite>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Newsletter Widget -->
+                <div class="card sidebar-widget">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to get updates on new tutorials and resources.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>We create comprehensive tutorials on modern web development techniques.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 LayoutMaster. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile navigation toggle
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
